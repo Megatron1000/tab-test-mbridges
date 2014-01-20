@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ErrorAlert.h"
 
-@interface EmployeeDownloader : NSObject
+typedef void (^DownloadCompletionHandler)(NSData *data);
+
+@interface EmployeeDownloader : NSObject <NSURLConnectionDelegate, NSURLConnectionDataDelegate>
+
+@property NSMutableData *receivedData;
 
 @end

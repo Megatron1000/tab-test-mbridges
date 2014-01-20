@@ -44,6 +44,8 @@
 		ABA7D2CE188DAB420000D5A9 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA7D2CD188DAB420000D5A9 /* libxml2.2.dylib */; };
 		ABA7D2D0188DAC100000D5A9 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA7D2CF188DAC100000D5A9 /* ImageIO.framework */; };
 		ABA7D2D2188DADCF0000D5A9 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA7D2D1188DADCF0000D5A9 /* libxml2.dylib */; };
+		ABA7D2D8188DB4950000D5A9 /* ErrorAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA7D2D7188DB4950000D5A9 /* ErrorAlert.m */; };
+		ABA7D2DB188DB8B20000D5A9 /* EmployeeCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA7D2DA188DB8B20000D5A9 /* EmployeeCreator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +122,10 @@
 		ABA7D2CD188DAB420000D5A9 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
 		ABA7D2CF188DAC100000D5A9 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		ABA7D2D1188DADCF0000D5A9 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		ABA7D2D6188DB4950000D5A9 /* ErrorAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorAlert.h; sourceTree = "<group>"; };
+		ABA7D2D7188DB4950000D5A9 /* ErrorAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorAlert.m; sourceTree = "<group>"; };
+		ABA7D2D9188DB8B20000D5A9 /* EmployeeCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeCreator.h; sourceTree = "<group>"; };
+		ABA7D2DA188DB8B20000D5A9 /* EmployeeCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeCreator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +195,10 @@
 				ABA7D0C3188DA5450000D5A9 /* AppDelegate.m */,
 				ABA7D0EE188DA9D20000D5A9 /* EmployeeDownloader.h */,
 				ABA7D0EF188DA9D20000D5A9 /* EmployeeDownloader.m */,
+				ABA7D2D9188DB8B20000D5A9 /* EmployeeCreator.h */,
+				ABA7D2DA188DB8B20000D5A9 /* EmployeeCreator.m */,
+				ABA7D2D6188DB4950000D5A9 /* ErrorAlert.h */,
+				ABA7D2D7188DB4950000D5A9 /* ErrorAlert.m */,
 				ABA7D2D3188DAE360000D5A9 /* Model */,
 				ABA7D2D4188DAE3B0000D5A9 /* View */,
 				ABA7D0F4188DAA8E0000D5A9 /* SubModules */,
@@ -428,10 +438,12 @@
 				ABA7D0F3188DAA340000D5A9 /* EmployeeCell.m in Sources */,
 				ABA7D240188DAADF0000D5A9 /* UIImage+GIF.m in Sources */,
 				ABA7D241188DAADF0000D5A9 /* UIImage+MultiFormat.m in Sources */,
+				ABA7D2D8188DB4950000D5A9 /* ErrorAlert.m in Sources */,
 				ABA7D23A188DAADF0000D5A9 /* SDWebImageDecoder.m in Sources */,
 				ABA7D0C0188DA5450000D5A9 /* main.m in Sources */,
 				ABA7D23C188DAADF0000D5A9 /* SDWebImageDownloaderOperation.m in Sources */,
 				ABA7D126188DAAB60000D5A9 /* TFHpple.m in Sources */,
+				ABA7D2DB188DB8B20000D5A9 /* EmployeeCreator.m in Sources */,
 				ABA7D0F0188DA9D20000D5A9 /* EmployeeDownloader.m in Sources */,
 				ABA7D23B188DAADF0000D5A9 /* SDWebImageDownloader.m in Sources */,
 			);

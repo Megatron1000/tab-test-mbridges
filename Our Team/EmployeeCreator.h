@@ -1,5 +1,5 @@
 //
-//  Employee.h
+//  EmployeeCreator.h
 //  Our Team
 //
 //  Created by Mark Bridges on 20/01/2014.
@@ -7,12 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TFHpple.h"
+#import "Employee.h"
 
-@interface Employee : NSObject
-
-@property NSString *name;
-@property NSString *jobTitle;
-@property NSString *bio;
-@property NSString *photoURL;
+@interface EmployeeCreator : NSObject
 
 @end
