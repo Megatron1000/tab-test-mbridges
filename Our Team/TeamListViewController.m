@@ -27,6 +27,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    EmployeeCreator *creator = [[EmployeeCreator alloc]init];
+    
+    [creator createEmployees];
 }
 
 - (void)didReceiveMemoryWarning

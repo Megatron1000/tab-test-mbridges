@@ -15,4 +15,6 @@ typedef void (^DownloadCompletionHandler)(NSData *data);
 
 @property NSMutableData *receivedData;
 
+- (id)initWithCompletionHandler:(DownloadCompletionHandler)completionHandler;
+
 @end

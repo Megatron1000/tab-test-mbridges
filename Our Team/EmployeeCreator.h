@@ -9,7 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "TFHpple.h"
 #import "Employee.h"
+#import "EmployeeDownloader.h"
 
 @interface EmployeeCreator : NSObject
+
+- (void)createEmployees;
 
 @end
