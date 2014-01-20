@@ -1,0 +1,6 @@
+[submodule "Our Team/hpple"]
+	path = Our Team/hpple
+	url = https://github.com/topfunky/hpple.git
+[submodule "Our Team/SDWebImage"]
+	path = Our Team/SDWebImage
+	url = https://github.com/rs/SDWebImage.git
