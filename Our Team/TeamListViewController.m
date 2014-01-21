@@ -27,10 +27,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
-    EmployeeCreator *creator = [[EmployeeCreator alloc]init];
-    
-    [creator createEmployees];
+//    [self.collectionView registerClass:[EmployeeCell class] forCellWithReuseIdentifier:@"EmployeeCell"];
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self refreshEmployeesArray];
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,5 +40,36 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)refreshEmployeesArray{
+    if (!self.employeeCreator) {
+        self.employeeCreator = [[EmployeeCreator alloc]init];
+    }
+    [self.employeeCreator createEmployeesWithCompletionHandler:^(NSArray *employees) {
+        self.employees = employees;
+        [self.collectionView reloadData];
+    }];
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    return self.employees.count;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    Employee *thisEmployee = [self.employees objectAtIndex:indexPath.row];
+    
+    EmployeeCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"EmployeeCell" forIndexPath:indexPath];
+    [cell setBackgroundColor:[UIColor redColor]];
+    [cell.pic setImageWithURL:[NSURL URLWithString:thisEmployee.photoURL]];
+    [cell.nameLabel setText:thisEmployee.name];
+    [cell.jobLabel setText:thisEmployee.jobTitle];
+    [cell.bioLabel setText:thisEmployee.bio];
+    
+    return cell;
+}
+
+
+
 
 @end

@@ -46,6 +46,7 @@
 		ABA7D2D2188DADCF0000D5A9 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA7D2D1188DADCF0000D5A9 /* libxml2.dylib */; };
 		ABA7D2D8188DB4950000D5A9 /* ErrorAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA7D2D7188DB4950000D5A9 /* ErrorAlert.m */; };
 		ABA7D2DB188DB8B20000D5A9 /* EmployeeCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA7D2DA188DB8B20000D5A9 /* EmployeeCreator.m */; };
+		ABA7D2DE188E51400000D5A9 /* UIImageViewRound.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA7D2DD188E51400000D5A9 /* UIImageViewRound.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +127,8 @@
 		ABA7D2D7188DB4950000D5A9 /* ErrorAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorAlert.m; sourceTree = "<group>"; };
 		ABA7D2D9188DB8B20000D5A9 /* EmployeeCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeCreator.h; sourceTree = "<group>"; };
 		ABA7D2DA188DB8B20000D5A9 /* EmployeeCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeCreator.m; sourceTree = "<group>"; };
+		ABA7D2DC188E51400000D5A9 /* UIImageViewRound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageViewRound.h; sourceTree = "<group>"; };
+		ABA7D2DD188E51400000D5A9 /* UIImageViewRound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewRound.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -320,6 +323,8 @@
 				ABA7D0E9188DA6E40000D5A9 /* TeamListViewController.m */,
 				ABA7D0F1188DAA340000D5A9 /* EmployeeCell.h */,
 				ABA7D0F2188DAA340000D5A9 /* EmployeeCell.m */,
+				ABA7D2DC188E51400000D5A9 /* UIImageViewRound.h */,
+				ABA7D2DD188E51400000D5A9 /* UIImageViewRound.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -422,6 +427,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABA7D0ED188DA7080000D5A9 /* Employee.m in Sources */,
+				ABA7D2DE188E51400000D5A9 /* UIImageViewRound.m in Sources */,
 				ABA7D23D188DAADF0000D5A9 /* SDWebImageManager.m in Sources */,
 				ABA7D239188DAADF0000D5A9 /* SDWebImageCompat.m in Sources */,
 				ABA7D23E188DAADF0000D5A9 /* SDWebImagePrefetcher.m in Sources */,

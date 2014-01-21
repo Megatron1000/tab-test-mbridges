@@ -11,8 +11,10 @@
 #import "Employee.h"
 #import "EmployeeDownloader.h"
 
+typedef void (^CreatorCompletionHandler)(NSArray *employees);
+
 @interface EmployeeCreator : NSObject
 
-- (void)createEmployees;
+- (void)createEmployeesWithCompletionHandler:(CreatorCompletionHandler)completionHandler;
 
 @end

@@ -8,9 +8,15 @@
 
 #import "EmployeeCreator.h"
 
+@interface EmployeeCreator ()
+
+@property (nonatomic, copy) CreatorCompletionHandler completionHandler;
+
+@end
+
 @implementation EmployeeCreator
 
-- (void)createEmployees{
+- (void)createEmployeesWithCompletionHandler:(CreatorCompletionHandler)completionHandler{
     (void)[[EmployeeDownloader alloc]initWithCompletionHandler:^(NSData *data) {
         
         TFHpple *htmlParser = [TFHpple hppleWithHTMLData:data];
@@ -22,6 +28,8 @@
         for (TFHppleElement *element in employeeNodes) {
             [employees addObject:[self createEmployeeForElement:element]];
         }
+        
+        completionHandler(employees);
     }];
 }
 

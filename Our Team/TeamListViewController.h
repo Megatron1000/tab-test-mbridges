@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "EmployeeCreator.h"
+#import "EmployeeCell.h"
+#import "UIImageView+WebCache.h"
 
 @interface TeamListViewController : UICollectionViewController
+
+@property EmployeeCreator *employeeCreator;
+@property NSArray *employees;
 
 @end

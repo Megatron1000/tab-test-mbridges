@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIImageViewRound.h"
 
 @interface EmployeeCell : UICollectionViewCell
+
+@property (weak, nonatomic) IBOutlet UIImageViewRound *pic;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *jobLabel;
+@property (weak, nonatomic) IBOutlet UILabel *bioLabel;
 
 @end
