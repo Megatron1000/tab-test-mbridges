@@ -13,7 +13,6 @@
 +(void)showError:(NSError *)error{
     if (error) {
         NSString *message = [NSString stringWithFormat:@"Description: %@",error.localizedDescription];
-        
         if (error.localizedFailureReason) {
             message = [NSString stringWithFormat:@"%@\nReason: %@", message, error.localizedDescription];
         }
@@ -26,7 +25,6 @@
                                                            delegate:nil
                                                   cancelButtonTitle:@"OK"
                                                   otherButtonTitles:nil, nil];
-        
         dispatch_async(dispatch_get_main_queue(), ^{
             [errorAlert show];
         });
