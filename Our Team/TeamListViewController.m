@@ -27,7 +27,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-//    [self.collectionView registerClass:[EmployeeCell class] forCellWithReuseIdentifier:@"EmployeeCell"];
+
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -60,7 +60,7 @@
     Employee *thisEmployee = [self.employees objectAtIndex:indexPath.row];
     
     EmployeeCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"EmployeeCell" forIndexPath:indexPath];
-    [cell setBackgroundColor:[UIColor redColor]];
+    [cell setBackgroundColor:[UIColor clearColor]];
     [cell.pic setImageWithURL:[NSURL URLWithString:thisEmployee.photoURL]];
     [cell.nameLabel setText:thisEmployee.name];
     [cell.jobLabel setText:thisEmployee.jobTitle];
