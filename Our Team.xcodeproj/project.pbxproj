@@ -47,6 +47,7 @@
 		ABA7D2D8188DB4950000D5A9 /* ErrorAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA7D2D7188DB4950000D5A9 /* ErrorAlert.m */; };
 		ABA7D2DB188DB8B20000D5A9 /* EmployeeCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA7D2DA188DB8B20000D5A9 /* EmployeeCreator.m */; };
 		ABA7D2DE188E51400000D5A9 /* UIImageViewRound.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA7D2DD188E51400000D5A9 /* UIImageViewRound.m */; };
+		ABA7D2E4188EFE800000D5A9 /* ActivityViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA7D2E3188EFE800000D5A9 /* ActivityViewManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +130,8 @@
 		ABA7D2DA188DB8B20000D5A9 /* EmployeeCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeCreator.m; sourceTree = "<group>"; };
 		ABA7D2DC188E51400000D5A9 /* UIImageViewRound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageViewRound.h; sourceTree = "<group>"; };
 		ABA7D2DD188E51400000D5A9 /* UIImageViewRound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewRound.m; sourceTree = "<group>"; };
+		ABA7D2E2188EFE800000D5A9 /* ActivityViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityViewManager.h; sourceTree = "<group>"; };
+		ABA7D2E3188EFE800000D5A9 /* ActivityViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityViewManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,6 +328,8 @@
 				ABA7D0F2188DAA340000D5A9 /* EmployeeCell.m */,
 				ABA7D2DC188E51400000D5A9 /* UIImageViewRound.h */,
 				ABA7D2DD188E51400000D5A9 /* UIImageViewRound.m */,
+				ABA7D2E2188EFE800000D5A9 /* ActivityViewManager.h */,
+				ABA7D2E3188EFE800000D5A9 /* ActivityViewManager.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -427,6 +432,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABA7D0ED188DA7080000D5A9 /* Employee.m in Sources */,
+				ABA7D2E4188EFE800000D5A9 /* ActivityViewManager.m in Sources */,
 				ABA7D2DE188E51400000D5A9 /* UIImageViewRound.m in Sources */,
 				ABA7D23D188DAADF0000D5A9 /* SDWebImageManager.m in Sources */,
 				ABA7D239188DAADF0000D5A9 /* SDWebImageCompat.m in Sources */,

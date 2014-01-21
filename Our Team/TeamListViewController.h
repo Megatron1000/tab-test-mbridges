@@ -10,10 +10,14 @@
 #import "EmployeeCreator.h"
 #import "EmployeeCell.h"
 #import "UIImageView+WebCache.h"
+#import "ActivityViewManager.h"
 
 @interface TeamListViewController : UICollectionViewController
 
 @property EmployeeCreator *employeeCreator;
 @property NSArray *employees;
+@property ActivityViewManager *activityViewManager;
+
+- (IBAction)refreshPressed:(id)sender;
 
 @end

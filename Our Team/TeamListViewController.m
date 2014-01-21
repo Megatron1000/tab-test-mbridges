@@ -45,8 +45,15 @@
     if (!self.employeeCreator) {
         self.employeeCreator = [[EmployeeCreator alloc]init];
     }
+    
+    if (!self.activityViewManager) {
+        self.activityViewManager = [[ActivityViewManager alloc]init];
+    }
+    [self.activityViewManager showActivityInView:self.view];
+    
     [self.employeeCreator createEmployeesWithCompletionHandler:^(NSArray *employees) {
         self.employees = employees;
+        [self.activityViewManager hideActivity];
         [self.collectionView reloadData];
     }];
 }
@@ -69,7 +76,8 @@
     return cell;
 }
 
-
-
+- (IBAction)refreshPressed:(id)sender{
+    [self refreshEmployeesArray];
+}
 
 @end
